@@ -1,8 +1,13 @@
-# React + Vite
+# WOWIES Movie Database React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Wowies is a responsive Movie Database App built with ReactJS and Sass that allow user to browse recently released, popular, top rated, upcoming movies as well as store user's favourite movies in the favourite list. Each movie will display the movie ratings, relase dates, titles, summaries, genres, and trailer. 
 
-Currently, two official plugins are available:
+TMDB API is used but is not endorsed or certified by TMDb.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Tools Used
+
+- React
+- Sass
+- Git + GitHub
+- Adobe XD
