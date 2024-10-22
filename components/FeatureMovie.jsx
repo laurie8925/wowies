@@ -7,6 +7,8 @@ import { dateFormat } from '../utilities/format';
 import { ratingAverage } from '../utilities/format';
 import useWindowDimensions from '../components/ScreenSize'
 
+const API_KEY = import.meta.env.REACT_APP_API_KEY;
+
 const FeatureMovie = () => {
     const [movies, setMovies] = useState([]);
 
@@ -15,7 +17,7 @@ const FeatureMovie = () => {
     const isDesktop = dimensions.width > desktopWidth;
 
     useEffect(() => {
-        fetch('https://api.themoviedb.org/3/movie/popular?api_key=d616641b0feb479ee6b4cb90a886cb1f')
+        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
             .then(response => response.json())
             .then(data => setMovies(data.results.slice(0, 4)))
             .catch(error => console.error('Error fetching data:', error));

@@ -5,6 +5,7 @@ import FeatureMovie from '/./components/FeatureMovie';
 import "react-alice-carousel/lib/alice-carousel.css";
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
+const API_KEY = import.meta.env.REACT_APP_API_KEY;
 
 const PageHome = () => {
   const [moviesList, setMoviesList] = useState([]);
@@ -14,7 +15,7 @@ const PageHome = () => {
     async function fetchMovies() {
       try {
         console.log("query:", query)
-        const response = await fetch(`https://api.themoviedb.org/3/movie/${query}?api_key=d616641b0feb479ee6b4cb90a886cb1f`);
+        const response = await fetch(`https://api.themoviedb.org/3/movie/${query}?api_key=${API_KEY}`);
         if (response.ok) {
           const data = await response.json();
           const selectedMovies = data.results.slice(0, 12);
