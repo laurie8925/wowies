@@ -15,7 +15,7 @@ import PageNotFound from '../pages/PageNotFound';
 
 const AppRouter = () => {
   return (
-    <BrowserRouter basename={`/${APP_FOLDER_NAME}`} >
+    <BrowserRouter>
         <div className='wrapper'>
             <Header />
                 <main>
