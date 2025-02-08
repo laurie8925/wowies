@@ -7,7 +7,7 @@ import { dateFormat } from '../utilities/format';
 import { ratingAverage } from '../utilities/format';
 import useWindowDimensions from '../components/ScreenSize'
 
-const API_KEY = import.meta.env.REACT_APP_API_KEY;
+const API_KEY = import.meta.env.REACT_APP_API_KEY || '9fa724d08b5ce8d1ccad7f73bc40cf4c';
 
 const FeatureMovie = () => {
     const [movies, setMovies] = useState([]);
