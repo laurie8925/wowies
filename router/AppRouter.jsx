@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //Components 
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 //page
 // import PageHome from '../pages/PageHome';
@@ -37,5 +37,3 @@ const AppRouter = () => {
 }
 
 export default AppRouter
-
-
